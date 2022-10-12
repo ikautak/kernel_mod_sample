@@ -1,0 +1,18 @@
+Linux Character Device Sample.
+
+// build
+make clean
+make
+
+// insmod
+sudo insmod ./sample.ko
+
+// check major number
+cat /proc/devices | grep sample
+
+// Read
+sudo cat /dev/sample
+
+// rmmod
+sudo rmmod sample
+
